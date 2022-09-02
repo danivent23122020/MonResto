@@ -169,7 +169,7 @@ p {
     position: relative;
 }
 
-/* *** setting box *** */
+/* *** setting menu *** */
 
 .menu .contenu {
     display: flex;
@@ -232,16 +232,16 @@ p {
 .titre p {
     color: #000;
 }
-/* *** setting section expert *** */
+/* *** setting expert *** */
 .expert {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     height: 100vh;
 }
 .expert .contenu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .expert .contenu .box {
     width: 350px;
@@ -339,4 +339,90 @@ p {
     font-weight: 600;
     color: #fb911f;
     margin-bottom: 30px;
+}
+/* /// setting contact /// */
+.contact {
+    background-image: url("/images/img-form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: unset;
+    height: 100vh;
+}
+.contact .contactform {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+.contact .contactform h3 {
+    color: #111;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact .contactform .inputbox input,
+.contact .contactform .inputbox textarea {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: #111;
+    padding: 10px;
+    margin: 5px 0;
+    outline: none;
+    resize: none;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+.contact .contactform .inputbox input[type="submit"] {
+    color: #fff;
+    background-color: #fb911f;
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+.contact .contactform .inputbox input[type="submit"]:hover {
+    transform: translateY(-5px);
+    background-color: #d87710;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.contact .titre h2 {
+    color: #111;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* /// divider \\\ */
+.spikes {
+    position: relative;
+    background: #fb911f;
+    height: 1vh;
+}
+
+.spikes::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    /* z-index: 1; */
+    display: block;
+    height: 100px;
+    background-size: 100px 100%;
+    background-image: linear-gradient(135deg, #fb911f 25%, transparent 25%),
+        linear-gradient(225deg, #fb911f 25%, transparent 25%);
+    background-position: 0 0;
 }
