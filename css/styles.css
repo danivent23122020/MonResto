@@ -314,8 +314,8 @@ p {
     transition: all 0.2s ease-in-out;
 }
 .temoignage .contenu .box .imgbox {
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     position: relative;
     margin-bottom: 20px;
@@ -327,16 +327,15 @@ p {
     height: 100%;
     object-fit: cover;
 }
-.temoignage .contenu .box h3 {
-    font-size: 1.5em;
-}
-.temoignage .contenu .box p {
-    text-align: justify;
-    color: #111;
-}
-.temoignage .contenu .box .temoin {
+.temoignage .contenu .box .temoin p{
     font-size: 1.2em;
+    font-style: italic;
     text-align: justify;
     padding: 10px;
-    color: #111;
+    color: #666;
+}
+.temoignage .contenu .box .text h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #fb911f;
 }
