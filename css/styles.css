@@ -270,8 +270,9 @@ p {
 /* *** setting temoignage *** */
 .temoignage {
     background-image: url("/images/bg2.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-repeat: repeat;
+    min-height: 100vh;
+    height: auto;
 }
 .temoignage .titre h2 {
     margin-top: 50px;
@@ -284,9 +285,10 @@ p {
 .temoignage .contenu {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
     width: 100%;
-    /* flex-wrap: wrap; */
+    margin-top: 30px;
+    flex-wrap: wrap;
     
 }
 .temoignage .contenu .box{
