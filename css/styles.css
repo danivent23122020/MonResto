@@ -11,7 +11,7 @@ html {
     font-family: "Poppins", sans-serif;
 }
 
-/**** setting header ****/
+/* /// setting header \\\ */
 header {
     position: fixed;
     top: 0px;
@@ -25,18 +25,18 @@ header {
     align-items: center;
     transition: 0.5s;
 }
+
+/* setting sticky header */
 header.sticky {
-    background-color: rgb(122, 119, 119);
+    background-color: rgb(10, 10, 10);
     padding: 10px 10px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
 }
 header.sticky .logo {
-    color: #111;
     transition: 0.3s;
 }
 header.sticky .navbar li a {
-    color: #111;
     transition: 0.3s;
 }
 header.sticky .navbar li a:hover {
@@ -143,8 +143,7 @@ span {
         background-position: center;
         cursor: pointer;
     }
-ù
-    .banniere .contenu h2 {
+    ù .banniere .contenu h2 {
         font-size: 2em;
     }
 }
