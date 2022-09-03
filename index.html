@@ -21,15 +21,29 @@
             <!-- logo -->
             <a href="#" class="logo"><span>R</span>esto</a>
             <!-- menu nav -->
-            <ul class="navbar">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#apropos">A propos</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#expert">Expert</a></li>
-                <li><a href="#temoignage">Temoignage</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <a href="#" class="btn-reserve">Reservation</a>
-            </ul>
+            <div class="menutoggle" onclick="toggleMenu();">
+                <ul class="navbar">
+                    <li><a href="#" onclick="toggleMenu();">Accueil</a></li>
+                    <li>
+                        <a href="#apropos" onclick="toggleMenu();">A propos</a>
+                    </li>
+                    <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+                    <li>
+                        <a href="#expert" onclick="toggleMenu();">Expert</a>
+                    </li>
+                    <li>
+                        <a href="#temoignage" onclick="toggleMenu();"
+                            >Temoignage</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#contact" onclick="toggleMenu();">Contact</a>
+                    </li>
+                    <a href="#" class="btn-reserve" onclick="toggleMenu();"
+                        >Reservation</a
+                    >
+                </ul>
+            </div>
         </header>
         <!-- section banniere -->
         <section class="banniere" id="banniere">
@@ -333,7 +347,12 @@
             <p class="copyright">
                 &copy; 2022 - Mon Resto - Tous droits réservés
             </p>
-            <p>Notre <a href="" class="cgv" target="_blank">Politique de confidentialité</a></p>
+            <p>
+                Notre
+                <a href="" class="cgv" target="_blank"
+                    >Politique de confidentialité</a
+                >
+            </p>
             <p>
                 Réalisé par
                 <a href="https://daniel-ventura.fr/" class="cgv" target="_blank"
